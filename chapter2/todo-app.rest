@@ -1,0 +1,45 @@
+### GET/
+GET http://localhost:5000
+
+###sign up
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "admin01",
+    "password": "12345678"
+}
+###login
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin01",
+    "password": "12345678"
+}
+
+###fetch all todos
+GET http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4MTI5ODc3LCJleHAiOjE3MzgyMTYyNzd9._jIGmt5XWwNmGD_iyMuxF22kHJtQWB-MDhLKBuj1p-Q
+
+###create a todo
+POST http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4MTI5ODc3LCJleHAiOjE3MzgyMTYyNzd9._jIGmt5XWwNmGD_iyMuxF22kHJtQWB-MDhLKBuj1p-Q
+Content-Type: application/json
+
+{
+    "task": "Learn Node.js"
+}
+
+###update a todo
+PUT http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4MTI5ODc3LCJleHAiOjE3MzgyMTYyNzd9._jIGmt5XWwNmGD_iyMuxF22kHJtQWB-MDhLKBuj1p-Q
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+###delete a todo
+DELETE  http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4MTI5ODc3LCJleHAiOjE3MzgyMTYyNzd9._jIGmt5XWwNmGD_iyMuxF22kHJtQWB-MDhLKBuj1p-Q

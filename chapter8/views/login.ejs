@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10">
+        <h1 class="text-3xl mb-10">Login your Account</h1>
+        <form method="post" action="/login">
+            <input type="email" name="email" class="px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 outline-none" placeholder="Email">
+            <input type="password" name="password" class="px-3 py-2 rounded-md bg-transparent border-2 border-zinc-800 outline-none" placeholder="Password">
+            <input type="submit" value="Login" class="px-5 py-2 rounded-md bg-blue-600">
+        </form>
+    </div>
+</body>
+</html>
